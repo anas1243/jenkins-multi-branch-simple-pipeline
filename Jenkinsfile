@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent {label 'agent-ec2'}
 
     stages {
         stage('Dockerize simple nodejs app') {
